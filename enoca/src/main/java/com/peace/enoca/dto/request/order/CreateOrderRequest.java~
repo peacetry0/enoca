@@ -1,0 +1,14 @@
+package com.peace.enoca.dto.request.order;
+
+import com.peace.enoca.model.Customer;
+import com.peace.enoca.model.Product;
+
+import java.util.List;
+
+public record CreateOrderRequest(
+
+        Long customerId,
+        List<Product> productIds
+
+) {
+}
